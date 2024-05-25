@@ -34,3 +34,12 @@ def merge_ranges(ranges):
         else:
             merged_ranges.append(range_loop)
     return merged_ranges
+
+
+def test_solution():
+    assert(solution(A=[2,1],P=[5,1],B=3,E=6) == True)
+    assert(solution(A=[2,1],P=[5,1],B=2,E=6) == False)
+    assert(solution( A=[1,4,2],P=[10,4,7],B=11,E=1) == True)
+    
+    
+test_solution()
